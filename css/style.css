@@ -1,0 +1,316 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+}
+
+.name a,
+.main-nav a {
+	text-align: center;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (max-width: 767px) {
+
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  text-align:center;
+}
+
+.main-header, .main-content {
+
+  padding-left:10px;
+padding-right:10px;
+  
+}
+
+.main-nav a{
+  display:block;
+
+}
+
+.banner {
+text-align: center;
+padding-top: 20px;
+padding-bottom:20px;
+}
+
+.main-content {
+padding-top: 10px;
+  
+}
+
+.col h2{
+  text-align:center;
+}
+
+
+  
+.main-footer {
+text-align:center;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 960px) {
+
+
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.main-header, .main-content {
+width: 80%;
+margin: 0 auto;
+}
+
+.name {
+float:left;
+
+}
+
+.main-nav {
+float: right;
+
+
+}
+
+.main-nav li{
+float:left;
+padding-left: 10px;
+padding-right: 10px;
+margin-top: 5px;
+}
+
+.name, .main-nav  {
+vertical-align: top;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.banner {
+text-align: center;
+clear: both;
+padding-bottom: 50px;
+padding-top: 50px;
+
+}
+
+.main-content {
+padding-top:30px;
+}
+
+.primary {
+float:right;
+width: 50%;
+padding-left:20px;
+}
+
+.secondary{
+width: 50%;
+float: left;
+}
+
+.tertiary {
+width: 100%;
+float:left;
+}
+
+
+.main-footer {
+clear: both;
+text-align:center;
+}
+
+
+
+
+
+
+}
+
+
+@media (min-width: 961px)  {
+
+
+
+/* ---- Float clearfix ---- */
+
+body {
+max-width: 1500px;
+margin: 0 auto;
+}
+
+.clearfix::after {
+content: " ";
+display: table;
+clear: both;
+}
+
+.main-header, .main-content {
+width: 80%;
+margin: 0 auto;
+}
+
+.name {
+  float:left;
+
+}
+
+.main-nav {
+  float: right;
+
+
+}
+
+.main-nav li{
+float:left;
+margin-left: 40px;
+margin-right: 20px;
+
+}
+
+.main-nav a{
+  display:block;
+padding: .5em 0;
+}
+
+.name, .main-nav  {
+vertical-align: top;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.banner {
+  text-align: center;
+clear: both;
+padding-bottom: 50px;
+padding-top: 50px;
+
+}
+
+.main-content {
+padding-top:30px;
+}
+
+.col {
+  float:left;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.primary {
+
+width: 40%;
+
+}
+
+.secondary{
+width: 30%;
+
+}
+
+.tertiary {
+width: 30%;
+
+}
+  
+
+.main-footer {
+  clear: both;
+text-align:center;
+}
+
+}
+
+
